@@ -1,0 +1,110 @@
+/* Main styles for Sixteen Ink website */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --dark-bg: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+header {
+  background-color: var(--dark-bg);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Main content */
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  margin: 1rem 0;
+  color: var(--secondary-color);
+}
+
+/* App cards */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.app-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Privacy policy */
+.privacy-policy h3 {
+  margin-top: 2rem;
+}
+
+.privacy-policy section {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .apps {
+    grid-template-columns: 1fr;
+  }
+}
