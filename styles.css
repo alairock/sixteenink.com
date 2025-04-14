@@ -90,6 +90,20 @@ h3 {
   transform: translateY(-5px);
 }
 
+/* App icon styling */
+.app-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.app-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
 /* Privacy policy */
 .privacy-policy h3 {
   margin-top: 2rem;
